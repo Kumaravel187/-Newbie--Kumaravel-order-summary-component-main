@@ -4,9 +4,101 @@
   margin: 0;
   box-sizing: border-box;
   list-style: none;
+  font-family: "Red Hat Display";
 }
 
 body {
+  background-color: hsl(225, 100%, 94%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .background-design {
+  background: url(../images/pattern-background-mobile.svg) no-repeat center/cover;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.card {
+  max-width: 375px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card .img-container {
+  background: url(../images/illustration-hero.svg);
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: center/cover;
+}
+.card .component-container {
+  background-color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+.card .component-container .header {
+  margin-bottom: 15px;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.card .component-container .para {
+  color: hsl(224, 23%, 55%);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.card .component-container .billing {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 10px;
+}
+.card .component-container .billing .payment {
+  display: flex;
+  gap: 20px;
+}
+.card .component-container .billing .payment li {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.card .component-container .billing .change {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+.card .component-container .button-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+.card .component-container .button-container .proceed {
   background-color: hsl(245, 75%, 52%);
-  font-size: 16px;
+  color: hsl(225, 100%, 98%);
+  padding: 15px 10px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: color 0.6s ease-in-out;
+}
+.card .component-container .button-container .proceed:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+.card .component-container .button-container .cancel {
+  border: none;
+  background: #fff;
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+}
+
+@media screen and (min-width: 768px) {
+  .background-design {
+    background: url(../images/pattern-background-desktop.svg);
+  }
 }/*# sourceMappingURL=styles.css.map */
