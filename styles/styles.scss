@@ -7,6 +7,13 @@ $Dark-blue: hsl(223, 47%, 23%);
 
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&family=Red+Hat+Display&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
 body {
   background-color: $Bright-blue;
   font-size: 16px;
